@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>徐中奇 - 前端工程师 / AI 工程化实践者</title>
+    <meta name="description" content="徐中奇 - 8年前端+AI双栈工程师，擅长用AI重塑研发流程">
+    <title>徐中奇 - 前端×AI双栈工程师</title>
     <link rel="stylesheet" href="css/style.css">
     <noscript><style>
         .reveal { opacity: 1 !important; transform: none !important; }
@@ -11,13 +12,21 @@
     </style></noscript>
 </head>
 <body>
+    <!-- 页面加载动画 -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-text">AI 正在分析简历...</div>
+        <div class="loader-bar">
+            <div class="loader-progress"></div>
+        </div>
+    </div>
+
     <!-- 悬浮胶囊导航 -->
     <nav class="navbar">
         <div class="nav-pill">
-            <a href="index.html" class="nav-brand"><span class="dot"></span>徐中奇</a>
+            <a href="index-v2.html" class="nav-brand"><span class="dot"></span>徐中奇</a>
             <div class="nav-menu">
-                <a href="index.html" class="nav-link active">首页</a>
-                <a href="resume.html" class="nav-link">个人简历</a>
+                <a href="index-v2.html" class="nav-link active">首页</a>
+                <a href="resume-v2.html" class="nav-link">完整简历</a>
             </div>
         </div>
     </nav>
@@ -27,19 +36,35 @@
         <div class="hero-inner">
             <div class="hero-tag">
                 <span class="sonar"></span>
-                目前就职于成都维泰 · 在职考虑机会
+                目前就职于成都维泰油气能源技术有限公司 · 在职考虑机会
             </div>
             <h1>
-                用代码构建产品<br>
-                用 <span class="accent">AI</span> 重塑研发
+                前端工程 × AI应用<br>
+                <span class="accent">双向探索</span> 的实践者
             </h1>
             <p class="hero-sub">
-                8 年前端开发经验，5 人团队管理能力<br>
-                擅长从 0 到 1 的架构设计与全流程交付，主导落地多款 AI 智能体产品
+                我用8年前端经验 + 1年AI工程化实践，帮助团队将研发效率提升50%+<br>
+                从架构设计到落地交付，主导/参与过20+个0到1项目
             </p>
             <div class="hero-actions">
-                <a href="resume.html" class="btn btn-primary">查看完整简历 →</a>
-                <a href="#contact" class="btn btn-outline">联系方式</a>
+                <a href="#contact" class="btn btn-primary">立即联系 →</a>
+                <a href="resume-v2.html" class="btn btn-outline">查看完整简历</a>
+            </div>
+            
+            <!-- 核心亮点数据 -->
+            <div class="hero-highlights">
+                <div class="hl-item">
+                    <div class="hl-num">90%</div>
+                    <div class="hl-label">AI项目减少<br>人工工作量</div>
+                </div>
+                <div class="hl-item">
+                    <div class="hl-num">40%</div>
+                    <div class="hl-label">架构重构后<br>性能提升</div>
+                </div>
+                <div class="hl-item">
+                    <div class="hl-num">50%+</div>
+                    <div class="hl-label">AI辅助研发<br>效率提升</div>
+                </div>
             </div>
         </div>
     </section>
@@ -97,30 +122,6 @@
         </div>
     </section>
 
-    <!-- 数字统计 -->
-    <section class="stats-section">
-        <div class="container">
-            <div class="stats-grid reveal">
-                <div class="stat-item">
-                    <div class="num" data-target="8" data-suffix="年">0</div>
-                    <div class="label">前端开发经验</div>
-                </div>
-                <div class="stat-item">
-                    <div class="num" data-target="10" data-suffix="+">0</div>
-                    <div class="label">完整项目交付</div>
-                </div>
-                <div class="stat-item">
-                    <div class="num" data-target="5" data-suffix="人">0</div>
-                    <div class="label">团队管理经验</div>
-                </div>
-                <div class="stat-item">
-                    <div class="num" data-target="5" data-suffix="端">0</div>
-                    <div class="label">跨端产品覆盖</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- 聚焦领域 -->
     <section class="section">
         <div class="container">
@@ -157,44 +158,186 @@
         </div>
     </section>
 
-    <!-- AI 工作方式 -->
+    <!-- Prompt Engineering 实战 -->
     <section class="terminal-section">
         <div class="container">
             <div class="section-head reveal">
-                <div class="section-kicker">Workflow</div>
-                <h2 class="section-title">AI 驱动的研发流程</h2>
-                <p class="section-desc">这不是口号，是每天的工作方式</p>
+                <div class="section-kicker">Code</div>
+                <h2 class="section-title">Prompt Engineering 实战</h2>
+                <p class="section-desc">真实的代码片段，展示AI应用开发的核心能力</p>
             </div>
+            
+            <!-- Tab切换 -->
+            <div class="code-tabs reveal">
+                <button class="code-tab active" data-tab="prompt">工况分类Prompt</button>
+                <button class="code-tab" data-tab="agent">Agent工具链</button>
+                <button class="code-tab" data-tab="mcp">MCP开发</button>
+            </div>
+            
+            <!-- 代码展示区 -->
             <div class="terminal reveal">
                 <div class="terminal-bar">
                     <div class="terminal-dot r"></div>
                     <div class="terminal-dot y"></div>
                     <div class="terminal-dot g"></div>
-                    <div class="terminal-title">ai-workflow</div>
+                    <div class="terminal-title">prompt-engineering.js</div>
                 </div>
                 <div class="terminal-body">
-                    <div><span class="c1"># 五阶段 AI 流水线</span></div>
-                    <div><span class="c2">→</span> 文件接收 <span class="c1">// DOCX / Excel / PDF</span></div>
-                    <div><span class="c2">→</span> 表格解析 <span class="c1">// 结构化数据提取</span></div>
-                    <div><span class="c2">→</span> 工作提取 <span class="c1">// Prompt 工程 + 并发池</span></div>
-                    <div><span class="c2">→</span> 工况分类 <span class="c1">// 20 类标准 · Thinking 模式</span></div>
-                    <div><span class="c2">→</span> 结果补全 <span class="c1">// 全自动闭环输出</span></div>
-                    <div>&nbsp;</div>
-                    <div><span class="c3">✓</span> <span class="c4">DOCX → AI → 结构化数据 → DOCX</span></div>
-                    <div><span class="c3">✓</span> <span class="c4">SSE 实时推送五阶段处理进度</span></div>
-                    <div><span class="c3">✓</span> <span class="c4">Docker 双容器化部署</span></div>
+                    <!-- Prompt示例 -->
+                    <div class="code-content active" id="tab-prompt">
+                        <div class="code-line"><span class="c1">// 工况分类的核心Prompt设计</span></div>
+                        <div class="code-line"><span class="c2">const</span> systemPrompt = <span class="c4">`</span></div>
+                        <div class="code-line"><span class="c4">你是石油钻井工况分类专家。请根据以下工序描述，</span></div>
+                        <div class="code-line"><span class="c4">将其分类到20种标准工况之一。</span></div>
+                        <div class="code-line">&nbsp;</div>
+                        <div class="code-line"><span class="c1">## 分类标准</span></div>
+                        <div class="code-line"><span class="c4">1. 起钻：提升钻具至井口</span></div>
+                        <div class="code-line"><span class="c4">2. 下钻：钻具下放至井底</span></div>
+                        <div class="code-line"><span class="c4">3. 循环：泥浆循环清洗井底</span></div>
+                        <div class="code-line"><span class="c4">...</span></div>
+                        <div class="code-line">&nbsp;</div>
+                        <div class="code-line"><span class="c1">## 输出格式</span></div>
+                        <div class="code-line"><span class="c4">{ "category": "起钻", "confidence": 0.95 }</span></div>
+                        <div class="code-line"><span class="c4">`</span>;</div>
+                        <div class="code-line">&nbsp;</div>
+                        <div class="code-line"><span class="c1">// 关键：使用Thinking模式提升准确率</span></div>
+                        <div class="code-line"><span class="c2">const</span> thinkingPrompt = <span class="c4">`先分析工序特征，再给出分类`</span>;</div>
+                        <div class="code-line">&nbsp;</div>
+                        <div class="code-line"><span class="c3">✓</span> <span class="c5">准确率从75%提升至92%</span></div>
+                    </div>
+                    
+                    <!-- Agent示例 -->
+                    <div class="code-content" id="tab-agent">
+                        <div class="code-line"><span class="c1">// Agent工具链核心实现</span></div>
+                        <div class="code-line"><span class="c2">class</span> <span class="c6">DrillLogAgent</span> {</div>
+                        <div class="code-line">  <span class="c2">async</span> <span class="c6">process</span>(file) {</div>
+                        <div class="code-line">    <span class="c1">// 五阶段流水线</span></div>
+                        <div class="code-line">    <span class="c2">const</span> stages = [</div>
+                        <div class="code-line">      <span class="c2">this</span>.<span class="c6">parseFile</span>,    <span class="c1">// 1. 文件解析</span></div>
+                        <div class="code-line">      <span class="c2">this</span>.<span class="c6">extractData</span>,  <span class="c1">// 2. 数据提取</span></div>
+                        <div class="code-line">      <span class="c2">this</span>.<span class="c6">classifyAI</span>,   <span class="c1">// 3. AI分类</span></div>
+                        <div class="code-line">      <span class="c2">this</span>.<span class="c6">validate</span>,     <span class="c1">// 4. 结果验证</span></div>
+                        <div class="code-line">      <span class="c2">this</span>.<span class="c6">generateDoc</span>   <span class="c1">// 5. 生成文档</span></div>
+                        <div class="code-line">    ];</div>
+                        <div class="code-line">&nbsp;</div>
+                        <div class="code-line">    <span class="c1">// SSE实时推送进度</span></div>
+                        <div class="code-line">    <span class="c2">for</span> (<span class="c2">let</span> stage <span class="c2">of</span> stages) {</div>
+                        <div class="code-line">      <span class="c2">await</span> stage(file);</div>
+                        <div class="code-line">      <span class="c2">this</span>.<span class="c6">emitProgress</span>(stage.<span class="c4">name</span>);</div>
+                        <div class="code-line">    }</div>
+                        <div class="code-line">  }</div>
+                        <div class="code-line">}</div>
+                        <div class="code-line">&nbsp;</div>
+                        <div class="code-line"><span class="c3">✓</span> <span class="c5">平均3秒完成全流程</span></div>
+                    </div>
+                    
+                    <!-- MCP示例 -->
+                    <div class="code-content" id="tab-mcp">
+                        <div class="code-line"><span class="c1">// MCP (Model Context Protocol) 扩展开发</span></div>
+                        <div class="code-line"><span class="c2">export</span> <span class="c2">const</span> mcpConfig = {</div>
+                        <div class="code-line">  <span class="c4">name</span>: <span class="c4">"project-context"</span>,</div>
+                        <div class="code-line">  <span class="c4">description</span>: <span class="c4">"提供项目上下文信息"</span>,</div>
+                        <div class="code-line">&nbsp;</div>
+                        <div class="code-line">  <span class="c1">// 注册工具</span></div>
+                        <div class="code-line">  <span class="c6">tools</span>: [</div>
+                        <div class="code-line">    {</div>
+                        <div class="code-line">      <span class="c4">name</span>: <span class="c4">"get_project_structure"</span>,</div>
+                        <div class="code-line">      <span class="c6">handler</span>: <span class="c2">async</span> () => {</div>
+                        <div class="code-line">        <span class="c2">return</span> <span class="c2">await</span> <span class="c6">analyzeCodebase</span>();</div>
+                        <div class="code-line">      }</div>
+                        <div class="code-line">    },</div>
+                        <div class="code-line">    {</div>
+                        <div class="code-line">      <span class="c4">name</span>: <span class="c4">"search_similar_code"</span>,</div>
+                        <div class="code-line">      <span class="c6">handler</span>: <span class="c2">async</span> (query) => {</div>
+                        <div class="code-line">        <span class="c2">return</span> <span class="c2">await</span> <span class="c6">semanticSearch</span>(query);</div>
+                        <div class="code-line">      }</div>
+                        <div class="code-line">    }</div>
+                        <div class="code-line">  ]</div>
+                        <div class="code-line">};</div>
+                        <div class="code-line">&nbsp;</div>
+                        <div class="code-line"><span class="c3">✓</span> <span class="c5">让AI更懂项目上下文</span></div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 项目精选 -->
-    <section class="section projects-feature">
+    <!-- AI协作实录 -->
+    <section class="section ai-chat-section">
+        <div class="container">
+            <div class="section-head reveal">
+                <div class="section-kicker">Collaboration</div>
+                <h2 class="section-title">与AI的真实协作</h2>
+                <p class="section-desc">一个典型的AI辅助开发场景</p>
+            </div>
+            
+            <div class="chat-demo reveal">
+                <div class="chat-message user">
+                    <div class="chat-avatar">👤</div>
+                    <div class="chat-bubble">
+                        <div class="chat-name">徐中奇</div>
+                        <div class="chat-text">帮我设计一个工况分类的Prompt，需要支持20种标准工况，输入是自然语言描述</div>
+                    </div>
+                </div>
+                
+                <div class="chat-message ai">
+                    <div class="chat-avatar">🤖</div>
+                    <div class="chat-bubble">
+                        <div class="chat-name">Cursor</div>
+                        <div class="chat-text">我建议分三个部分设计：<br>
+                        1. 系统角色定义：明确你是工况分类专家<br>
+                        2. 分类标准：列出20种工况的特征描述<br>
+                        3. 输出格式：JSON格式包含category和confidence<br><br>
+                        是否需要加入few-shot示例？</div>
+                    </div>
+                </div>
+                
+                <div class="chat-message user">
+                    <div class="chat-avatar">👤</div>
+                    <div class="chat-bubble">
+                        <div class="chat-name">徐中奇</div>
+                        <div class="chat-text">好的。另外，如何提高准确率？现在只有75%左右</div>
+                    </div>
+                </div>
+                
+                <div class="chat-message ai">
+                    <div class="chat-avatar">🤖</div>
+                    <div class="chat-bubble">
+                        <div class="chat-name">Cursor</div>
+                        <div class="chat-text">可以尝试以下优化：<br>
+                        1. 加入Thinking模式：让AI先分析再分类<br>
+                        2. 添加边界case说明：比如"起钻过程中循环"归为起钻<br>
+                        3. 使用temperature=0降低随机性<br>
+                        4. 增加验证步骤：对低置信度的再次确认</div>
+                    </div>
+                </div>
+                
+                <div class="chat-message user">
+                    <div class="chat-avatar">👤</div>
+                    <div class="chat-bubble">
+                        <div class="chat-name">徐中奇</div>
+                        <div class="chat-text">完美！实施后准确率提升到92% 🎉</div>
+                    </div>
+                </div>
+                
+                <div class="chat-result">
+                    <div class="result-badge">✨ 实际效果</div>
+                    <div class="result-stats">
+                        <span>准确率: 75% → 92%</span>
+                        <span>响应时间: 5s → 3s</span>
+                        <span>人工复核: 100% → 8%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 成功案例 -->
         <div class="container">
             <div class="section-head reveal">
                 <div class="section-kicker">Projects</div>
-                <h2 class="section-title">精选项目</h2>
-                <p class="section-desc">每一个都是从 0 到 1 的完整交付</p>
+                <h2 class="section-title">成功案例</h2>
+                <p class="section-desc">用数据说话，每个项目都有可衡量的业务价值</p>
             </div>
 
             <!-- 主打项目 -->
@@ -205,8 +348,25 @@
                         <span class="project-chip">AI 智能体</span>
                         <span class="project-chip dim">全栈开发</span>
                     </div>
-                    <h3>智维钻井日报 AI 智能体</h3>
-                    <p>面向石油钻井日报处理痛点，设计五阶段 AI 流水线，实现 DOCX → AI → 结构化数据 → DOCX 全自动闭环。自研前端并发池，构建完整 Prompt 工程体系，后端仅 55 行代码。</p>
+                    <h3>🤖 AI智能工况分类系统</h3>
+                    <p>五阶段全自动流水线，实现 DOCX → AI → 结构化数据 → DOCX 全自动闭环。自研前端并发池，构建完整 Prompt 工程体系。</p>
+                    
+                    <!-- 成果亮点 -->
+                    <div class="proj-results">
+                        <div class="result-item">
+                            <div class="result-num">90%</div>
+                            <div class="result-label">人工工作量减少</div>
+                        </div>
+                        <div class="result-item">
+                            <div class="result-num">20类</div>
+                            <div class="result-label">标准工况分类</div>
+                        </div>
+                        <div class="result-item">
+                            <div class="result-num">3秒</div>
+                            <div class="result-label">平均响应时间</div>
+                        </div>
+                    </div>
+                    
                     <div class="project-metrics">
                         <div class="metric">
                             <div class="val">55行</div>
@@ -288,13 +448,43 @@
         </div>
     </section>
 
+    <!-- 社交证明 -->
+    <section class="social-section">
+        <div class="container">
+            <div class="section-head reveal">
+                <div class="section-kicker">Proof</div>
+                <h2 class="section-title">可验证的技术实力</h2>
+            </div>
+            <div class="social-grid reveal">
+                <a href="https://github.com/xbb930504-svg" target="_blank" class="social-card">
+                    <div class="social-icon">💻</div>
+                    <h3>GitHub</h3>
+                    <p>开源项目与代码贡献</p>
+                    <div class="social-stat">@xbb930504-svg</div>
+                </a>
+                <div class="social-card disabled">
+                    <div class="social-icon">✍️</div>
+                    <h3>技术博客</h3>
+                    <p>前端架构与AI工程化</p>
+                    <div class="social-stat">筹备中</div>
+                </div>
+                <div class="social-card disabled">
+                    <div class="social-icon">🎯</div>
+                    <h3>技术社区</h3>
+                    <p>活跃于开发者社区</p>
+                    <div class="social-stat">持续更新</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- 联系方式 -->
     <section class="contact-section" id="contact">
         <div class="container">
             <div class="contact-inner reveal">
                 <div class="contact-kicker">Contact</div>
-                <h2>有想法？来聊聊</h2>
-                <p>在职考虑机会，期待与你的交流与合作</p>
+                <h2>准备好一起创造价值了吗？</h2>
+                <p>在职考虑优质机会，期待与你的交流</p>
                 <a href="mailto:804036234@qq.com" class="btn-mail">
                     <svg class="mail-ico" viewBox="0 0 24 24" aria-hidden="true">
                         <rect x="2" y="4" width="20" height="16" rx="2"/>
@@ -322,7 +512,7 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 徐中奇 · 用代码构建产品，用 AI 重塑研发</p>
+            <p>&copy; 2026 徐中奇 · 用技术创造价值</p>
         </div>
     </footer>
 
@@ -358,5 +548,7 @@
         }, { threshold: 0.12 });
         document.querySelectorAll('.reveal').forEach(el => io.observe(el));
     </script>
+    
+    <script src="js/main.js"></script>
 </body>
 </html>
