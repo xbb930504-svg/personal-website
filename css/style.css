@@ -1149,18 +1149,21 @@ a { color: inherit; }
 }
 
 .r-avatar {
-    width: 90px;
-    height: 90px;
+    position: absolute;
+    top: 80px;
+    right: var(--sp-md);
+    width: 76px;
+    height: 76px;
     border-radius: 50%;
     object-fit: cover;
-    margin: 20px 0 16px;
-    box-shadow: 0 4px 16px rgba(28, 25, 23, 0.08), 0 0 0 3px rgba(249, 115, 22, 0.12);
-    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 3px 12px rgba(28, 25, 23, 0.10), 0 0 0 2.5px rgba(249, 115, 22, 0.08);
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 10;
 }
 
 .r-avatar:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 24px rgba(28, 25, 23, 0.12), 0 0 0 3px rgba(249, 115, 22, 0.22);
+    transform: translateY(-3px) scale(1.08);
+    box-shadow: 0 8px 28px rgba(28, 25, 23, 0.14), 0 0 0 2.5px rgba(249, 115, 22, 0.20);
 }
 
 .r-name {
@@ -1600,6 +1603,7 @@ a.r-chip:hover {
 
 @media (max-width: 900px) {
     .r-hero { padding-top: 140px; }
+    .r-avatar { width: 68px; height: 68px; top: 70px; }
 }
 
 @media (max-width: 768px) {
@@ -1634,11 +1638,12 @@ a.r-chip:hover {
     .navbar { top: 12px; }
     .r-name { letter-spacing: -2px; }
     .r-section { margin-bottom: 80px; }
+    .r-avatar { width: 60px; height: 60px; top: 60px; right: var(--sp-sm); }
 }
 
 /* 打印 */
 @media print {
-    .navbar, .footer, .r-watermark, .r-hero::before, .r-hero::after { display: none; }
+    .navbar, .footer, .r-watermark, .r-avatar, .r-hero::before, .r-hero::after { display: none; }
     .r-hero { padding-top: 20px; }
     .manifesto::before { display: none; }
     .proj-card, .tl-card { box-shadow: none; break-inside: avoid; }
