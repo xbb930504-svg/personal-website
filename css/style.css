@@ -1150,8 +1150,9 @@ a { color: inherit; }
 
 .r-hero-layout {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 24px;
+    margin-top: 20px;
     margin-bottom: 30px;
 }
 
