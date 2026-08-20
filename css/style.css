@@ -4,36 +4,36 @@
    ======================================== */
 
 :root {
-    /* 主色调 - 极淡中性灰 */
-    --c-accent: #e2e8f0;
-    --c-accent-light: #f1f5f9;
-    --c-accent-pale: #fafafa;
-    --c-accent-tint: #f5f5f5;
-    --c-accent-dim: #cbd5e1;
+    /* 主色调 - 橙色系 */
+    --c-accent: #f97316;
+    --c-accent-light: #fb923c;
+    --c-accent-pale: #fff7ed;
+    --c-accent-tint: #ffedd5;
+    --c-accent-dim: #ea580c;
 
-    /* 中性色 - 极淡灰蓝 */
-    --c-bg: #f8fafc;
+    /* 中性色 - 暖灰 */
+    --c-bg: #fff7ed;
     --c-bg-card: #ffffff;
-    --c-bg-soft: #f1f5f9;
-    --c-text: #475569;
-    --c-text-2: #64748b;
-    --c-text-3: #94a3b8;
+    --c-bg-soft: #f5f5f5;
+    --c-text: #1c1917;
+    --c-text-2: #57534e;
+    --c-text-3: #78716c;
 
     /* 渐变 - 柔和层次 */
-    --grad-text: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%);
-    --grad-tag: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
-    --grad-glow: linear-gradient(135deg, rgba(110, 231, 183, 0.12) 0%, rgba(52, 211, 153, 0.04) 100%);
+    --grad-text: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
+    --grad-tag: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
+    --grad-glow: linear-gradient(135deg, rgba(249, 115, 22, 0.12) 0%, rgba(234, 88, 12, 0.04) 100%);
     --grad-shine: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 100%);
-    --grad-border: linear-gradient(135deg, rgba(110, 231, 183, 0.25), rgba(167, 243, 208, 0.15), rgba(110, 231, 183, 0.08));
+    --grad-border: linear-gradient(135deg, rgba(249, 115, 22, 0.25), rgba(251, 146, 60, 0.15), rgba(249, 115, 22, 0.08));
 
     /* 阴影 - 轻盈立体感 */
-    --shadow-xs: 0 1px 3px rgba(71, 85, 105, 0.04);
-    --shadow-sm: 0 2px 10px rgba(71, 85, 105, 0.05), 0 1px 3px rgba(71, 85, 105, 0.03);
-    --shadow-md: 0 6px 24px rgba(71, 85, 105, 0.06), 0 2px 8px rgba(71, 85, 105, 0.04);
-    --shadow-lg: 0 12px 40px rgba(71, 85, 105, 0.08), 0 4px 16px rgba(71, 85, 105, 0.05);
-    --shadow-xl: 0 20px 60px rgba(71, 85, 105, 0.09), 0 8px 24px rgba(71, 85, 105, 0.07);
-    --shadow-orange: 0 8px 32px rgba(110, 231, 183, 0.15), 0 3px 12px rgba(110, 231, 183, 0.10);
-    --shadow-orange-lg: 0 16px 48px rgba(110, 231, 183, 0.18), 0 6px 20px rgba(110, 231, 183, 0.12);
+    --shadow-xs: 0 1px 3px rgba(28, 25, 23, 0.08);
+    --shadow-sm: 0 2px 10px rgba(28, 25, 23, 0.08), 0 1px 3px rgba(28, 25, 23, 0.05);
+    --shadow-md: 0 6px 24px rgba(28, 25, 23, 0.1), 0 2px 8px rgba(28, 25, 23, 0.06);
+    --shadow-lg: 0 12px 40px rgba(28, 25, 23, 0.12), 0 4px 16px rgba(28, 25, 23, 0.08);
+    --shadow-xl: 0 20px 60px rgba(28, 25, 23, 0.14), 0 8px 24px rgba(28, 25, 23, 0.1);
+    --shadow-orange: 0 8px 32px rgba(249, 115, 22, 0.15), 0 3px 12px rgba(249, 115, 22, 0.10);
+    --shadow-orange-lg: 0 16px 48px rgba(249, 115, 22, 0.18), 0 6px 20px rgba(249, 115, 22, 0.12);
 
     /* 间距 */
     --sp-xs: 8px;
@@ -211,7 +211,7 @@ a { color: inherit; }
 }
 
 /* ========================================
-   首页 Hero - 底色 #fafafa，网格+光晕装饰
+   首页 Hero - 底色 #fff7ed，网格+光晕装饰
    ======================================== */
 
 .hero {
@@ -737,7 +737,7 @@ a { color: inherit; }
 }
 
 .focus-row:hover {
-    background: linear-gradient(90deg, #fafafa 0%, rgba(250, 250, 250, 0) 100%);
+    background: linear-gradient(90deg, #fff7ed 0%, rgba(250, 250, 250, 0) 100%);
     transform: translateX(12px);
 }
 
@@ -857,7 +857,7 @@ a { color: inherit; }
 }
 
 .terminal-body .c1 { color: #78716c; }
-.terminal-body .c2 { color: #f1f5f9; }
+.terminal-body .c2 { color: #fb923c; }
 .terminal-body .c3 { color: #4ade80; }
 .terminal-body .c4 { color: #60a5fa; }
 
@@ -883,7 +883,7 @@ a { color: inherit; }
 /* 主打项目：全宽浅橙渐变卡 */
 .proj-hero {
     position: relative;
-    background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #fff7ed 100%);
     border-radius: var(--r-xl);
     padding: clamp(32px, 5vw, 56px);
     box-shadow: var(--shadow-lg);
@@ -1638,7 +1638,7 @@ a.r-chip:hover {
 
 /* 现任公司卡片：浅橙渐变底 + 增强光晕 */
 .tl-card.featured {
-    background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #fff7ed 100%);
     box-shadow: var(--shadow-md);
     border-color: rgba(110, 231, 183, 0.08);
 }
@@ -1747,7 +1747,7 @@ a.r-chip:hover {
 
 /* 重点项目：浅橙渐变底 + 橙色光晕 */
 .proj-card.featured {
-    background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #fff7ed 100%);
     box-shadow: 0 10px 36px rgba(110, 231, 183, 0.13);
 }
 
@@ -2496,7 +2496,7 @@ a.r-chip:hover {
 }
 
 .chat-message.ai .chat-avatar {
-    background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+    background: linear-gradient(135deg, #fb923c, #f97316);
 }
 
 .chat-bubble {
