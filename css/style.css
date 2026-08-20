@@ -4,12 +4,12 @@
    ======================================== */
 
 :root {
-    /* 主色调 - 淡雅薄荷绿 */
-    --c-accent: #6ee7b7;
-    --c-accent-light: #a7f3d0;
-    --c-accent-pale: #f0fdf9;
-    --c-accent-tint: #ecfdf8;
-    --c-accent-dim: #34d399;
+    /* 主色调 - 淡雅中性色 */
+    --c-accent: #94a3b8;
+    --c-accent-light: #cbd5e1;
+    --c-accent-pale: #f8fafc;
+    --c-accent-tint: #f1f5f9;
+    --c-accent-dim: #64748b;
 
     /* 中性色 - 极淡灰蓝 */
     --c-bg: #f8fafc;
