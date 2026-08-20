@@ -4,12 +4,12 @@
    ======================================== */
 
 :root {
-    /* 主色调 - 淡雅中性色 */
-    --c-accent: #94a3b8;
-    --c-accent-light: #cbd5e1;
-    --c-accent-pale: #f8fafc;
-    --c-accent-tint: #f1f5f9;
-    --c-accent-dim: #64748b;
+    /* 主色调 - 淡雅薄荷绿 */
+    --c-accent: #6ee7b7;
+    --c-accent-light: #a7f3d0;
+    --c-accent-pale: #f0fdf9;
+    --c-accent-tint: #ecfdf8;
+    --c-accent-dim: #34d399;
 
     /* 中性色 - 极淡灰蓝 */
     --c-bg: #f8fafc;
@@ -275,7 +275,7 @@ a { color: inherit; }
     align-items: center;
     gap: 10px;
     padding: 9px 20px 9px 16px;
-    background: rgba(255, 247, 237, 0.72);
+    background: rgba(236, 253, 245, 0.72);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-radius: 100px;
@@ -737,7 +737,7 @@ a { color: inherit; }
 }
 
 .focus-row:hover {
-    background: linear-gradient(90deg, #fff7ed 0%, rgba(255, 247, 237, 0) 100%);
+    background: linear-gradient(90deg, #ecfdf5 0%, rgba(236, 253, 245, 0) 100%);
     transform: translateX(12px);
 }
 
@@ -883,7 +883,7 @@ a { color: inherit; }
 /* 主打项目：全宽浅橙渐变卡 */
 .proj-hero {
     position: relative;
-    background: linear-gradient(135deg, #ffffff 0%, #fff7ed 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #ecfdf5 100%);
     border-radius: var(--r-xl);
     padding: clamp(32px, 5vw, 56px);
     box-shadow: var(--shadow-lg);
@@ -1638,7 +1638,7 @@ a.r-chip:hover {
 
 /* 现任公司卡片：浅橙渐变底 + 增强光晕 */
 .tl-card.featured {
-    background: linear-gradient(135deg, #ffffff 0%, #fff7ed 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #ecfdf5 100%);
     box-shadow: var(--shadow-md);
     border-color: rgba(110, 231, 183, 0.08);
 }
@@ -1747,7 +1747,7 @@ a.r-chip:hover {
 
 /* 重点项目：浅橙渐变底 + 橙色光晕 */
 .proj-card.featured {
-    background: linear-gradient(135deg, #ffffff 0%, #fff7ed 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #ecfdf5 100%);
     box-shadow: 0 10px 36px rgba(110, 231, 183, 0.13);
 }
 
