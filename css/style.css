@@ -4,36 +4,36 @@
    ======================================== */
 
 :root {
-    /* 主色调 - 橙色系 */
+    /* 主色调 - 橙色系统 */
     --c-accent: #f97316;
     --c-accent-light: #fb923c;
     --c-accent-pale: #fff7ed;
-    --c-accent-tint: #ffedd5;
+    --c-accent-tint: #fff3e8;
     --c-accent-dim: #ea580c;
 
-    /* 中性色 - 暖灰 */
-    --c-bg: #fff7ed;
+    /* 中性色 - 高级灰 */
+    --c-bg: #fafafa;
     --c-bg-card: #ffffff;
-    --c-bg-soft: #f5f5f5;
+    --c-bg-soft: #f5f4f2;
     --c-text: #1c1917;
     --c-text-2: #57534e;
-    --c-text-3: #78716c;
+    --c-text-3: #a8a29e;
 
-    /* 渐变 - 柔和层次 */
-    --grad-text: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
-    --grad-tag: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
-    --grad-glow: linear-gradient(135deg, rgba(249, 115, 22, 0.12) 0%, rgba(234, 88, 12, 0.04) 100%);
-    --grad-shine: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 100%);
-    --grad-border: linear-gradient(135deg, rgba(249, 115, 22, 0.25), rgba(251, 146, 60, 0.15), rgba(249, 115, 22, 0.08));
+    /* 渐变 - 增强层次 */
+    --grad-text: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+    --grad-tag: linear-gradient(135deg, #fb923c 0%, #ea580c 100%);
+    --grad-glow: linear-gradient(135deg, rgba(249, 115, 22, 0.15) 0%, rgba(234, 88, 12, 0.05) 100%);
+    --grad-shine: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
+    --grad-border: linear-gradient(135deg, rgba(249, 115, 22, 0.3), rgba(251, 146, 60, 0.2), rgba(249, 115, 22, 0.1));
 
-    /* 阴影 - 轻盈立体感 */
-    --shadow-xs: 0 1px 3px rgba(28, 25, 23, 0.08);
-    --shadow-sm: 0 2px 10px rgba(28, 25, 23, 0.08), 0 1px 3px rgba(28, 25, 23, 0.05);
-    --shadow-md: 0 6px 24px rgba(28, 25, 23, 0.1), 0 2px 8px rgba(28, 25, 23, 0.06);
-    --shadow-lg: 0 12px 40px rgba(28, 25, 23, 0.12), 0 4px 16px rgba(28, 25, 23, 0.08);
-    --shadow-xl: 0 20px 60px rgba(28, 25, 23, 0.14), 0 8px 24px rgba(28, 25, 23, 0.1);
-    --shadow-orange: 0 8px 32px rgba(249, 115, 22, 0.15), 0 3px 12px rgba(249, 115, 22, 0.10);
-    --shadow-orange-lg: 0 16px 48px rgba(249, 115, 22, 0.18), 0 6px 20px rgba(249, 115, 22, 0.12);
+    /* 阴影 - 增强立体感 */
+    --shadow-xs: 0 1px 3px rgba(28, 25, 23, 0.05);
+    --shadow-sm: 0 2px 10px rgba(28, 25, 23, 0.06), 0 1px 3px rgba(28, 25, 23, 0.04);
+    --shadow-md: 0 6px 24px rgba(28, 25, 23, 0.08), 0 2px 8px rgba(28, 25, 23, 0.06);
+    --shadow-lg: 0 12px 40px rgba(28, 25, 23, 0.10), 0 4px 16px rgba(28, 25, 23, 0.08);
+    --shadow-xl: 0 20px 60px rgba(28, 25, 23, 0.12), 0 8px 24px rgba(28, 25, 23, 0.10);
+    --shadow-orange: 0 8px 32px rgba(249, 115, 22, 0.20), 0 3px 12px rgba(249, 115, 22, 0.15);
+    --shadow-orange-lg: 0 16px 48px rgba(249, 115, 22, 0.25), 0 6px 20px rgba(249, 115, 22, 0.20);
 
     /* 间距 */
     --sp-xs: 8px;
@@ -72,7 +72,7 @@ body::before {
     position: fixed;
     inset: 0;
     background-image: 
-        radial-gradient(circle at 1px 1px, rgba(110, 231, 183, 0.025) 1px, transparent 0);
+        radial-gradient(circle at 1px 1px, rgba(249, 115, 22, 0.03) 1px, transparent 0);
     background-size: 32px 32px;
     pointer-events: none;
     z-index: 0;
@@ -86,7 +86,7 @@ body::after {
     right: -20%;
     width: 800px;
     height: 800px;
-    background: radial-gradient(circle, rgba(110, 231, 183, 0.04) 0%, transparent 60%);
+    background: radial-gradient(circle, rgba(249, 115, 22, 0.06) 0%, transparent 60%);
     pointer-events: none;
     z-index: 0;
     animation: float-glow 20s ease-in-out infinite;
@@ -176,7 +176,7 @@ a { color: inherit; }
     height: 8px;
     background: var(--grad-text);
     border-radius: 50%;
-    box-shadow: 0 0 8px rgba(110, 231, 183, 0.4);
+    box-shadow: 0 0 8px rgba(249, 115, 22, 0.4);
     animation: pulse-dot 2s ease-in-out infinite;
 }
 
@@ -211,7 +211,7 @@ a { color: inherit; }
 }
 
 /* ========================================
-   首页 Hero - 底色 #fff7ed，网格+光晕装饰
+   首页 Hero - 底色 #fafafa，网格+光晕装饰
    ======================================== */
 
 .hero {
@@ -225,8 +225,8 @@ a { color: inherit; }
     position: absolute;
     inset: 0;
     background-image:
-        linear-gradient(rgba(110, 231, 183, 0.05) 1.5px, transparent 1.5px),
-        linear-gradient(90deg, rgba(110, 231, 183, 0.05) 1.5px, transparent 1.5px);
+        linear-gradient(rgba(249, 115, 22, 0.05) 1.5px, transparent 1.5px),
+        linear-gradient(90deg, rgba(249, 115, 22, 0.05) 1.5px, transparent 1.5px);
     background-size: 60px 60px;
     mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, black, transparent);
     -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, black, transparent);
@@ -248,8 +248,8 @@ a { color: inherit; }
     height: 700px;
     background: radial-gradient(
         circle, 
-        rgba(110, 231, 183, 0.16) 0%,
-        rgba(167, 243, 208, 0.10) 30%, 
+        rgba(249, 115, 22, 0.16) 0%,
+        rgba(251, 146, 60, 0.10) 30%, 
         transparent 65%
     );
     pointer-events: none;
@@ -275,7 +275,7 @@ a { color: inherit; }
     align-items: center;
     gap: 10px;
     padding: 9px 20px 9px 16px;
-    background: rgba(250, 250, 250, 0.72);
+    background: rgba(255, 247, 237, 0.72);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-radius: 100px;
@@ -283,7 +283,7 @@ a { color: inherit; }
     font-weight: 500;
     color: var(--c-text-2);
     margin-bottom: var(--sp-lg);
-    box-shadow: 0 2px 14px rgba(110, 231, 183, 0.10);
+    box-shadow: 0 2px 14px rgba(249, 115, 22, 0.10);
 }
 
 /* 声呐扩散绿点 */
@@ -411,7 +411,7 @@ a { color: inherit; }
     color: var(--c-text);
     box-shadow: var(--shadow-sm);
     position: relative;
-    border: 1px solid rgba(110, 231, 183, 0.08);
+    border: 1px solid rgba(249, 115, 22, 0.08);
 }
 
 .btn-outline::before {
@@ -435,7 +435,7 @@ a { color: inherit; }
 .btn-outline:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
-    border-color: rgba(110, 231, 183, 0.15);
+    border-color: rgba(249, 115, 22, 0.15);
 }
 
 /* ========================================
@@ -457,7 +457,7 @@ a { color: inherit; }
     right: -120px;
     width: 420px;
     height: 420px;
-    background: radial-gradient(circle, rgba(110, 231, 183, 0.07) 0%, transparent 65%);
+    background: radial-gradient(circle, rgba(249, 115, 22, 0.07) 0%, transparent 65%);
     pointer-events: none;
 }
 
@@ -468,7 +468,7 @@ a { color: inherit; }
     left: -100px;
     width: 380px;
     height: 380px;
-    background: radial-gradient(circle, rgba(110, 231, 183, 0.05) 0%, transparent 65%);
+    background: radial-gradient(circle, rgba(249, 115, 22, 0.05) 0%, transparent 65%);
     pointer-events: none;
 }
 
@@ -507,7 +507,7 @@ a { color: inherit; }
     border-radius: 3px;
     background: var(--grad-text);
     transform: rotate(45deg);
-    box-shadow: 0 2px 6px rgba(110, 231, 183, 0.35);
+    box-shadow: 0 2px 6px rgba(249, 115, 22, 0.35);
 }
 
 .group-tags {
@@ -591,7 +591,7 @@ a { color: inherit; }
     background: var(--c-accent-tint);
     color: var(--c-accent-dim);
     position: relative;
-    box-shadow: 0 2px 8px rgba(110, 231, 183, 0.08);
+    box-shadow: 0 2px 8px rgba(249, 115, 22, 0.08);
 }
 
 .tag.t2::after {
@@ -610,14 +610,14 @@ a { color: inherit; }
 
 .tag.t2:hover {
     transform: translateY(-4px) scale(1.06);
-    box-shadow: 0 8px 24px rgba(110, 231, 183, 0.18);
+    box-shadow: 0 8px 24px rgba(249, 115, 22, 0.18);
 }
 
 .tag.t3 {
     background: var(--c-bg-soft);
     color: var(--c-text-2);
     box-shadow: 0 2px 6px rgba(28, 25, 23, 0.04);
-    border: 1px solid rgba(110, 231, 183, 0.06);
+    border: 1px solid rgba(249, 115, 22, 0.06);
 }
 
 .tag.t3:hover {
@@ -625,7 +625,7 @@ a { color: inherit; }
     background: #eceae7;
     color: var(--c-text);
     box-shadow: 0 8px 20px rgba(28, 25, 23, 0.10);
-    border-color: rgba(110, 231, 183, 0.12);
+    border-color: rgba(249, 115, 22, 0.12);
 }
 
 /* ========================================
@@ -680,7 +680,7 @@ a { color: inherit; }
     border-radius: 2px;
     background: var(--grad-text);
     transform: rotate(45deg);
-    box-shadow: 0 2px 5px rgba(110, 231, 183, 0.3);
+    box-shadow: 0 2px 5px rgba(249, 115, 22, 0.3);
 }
 
 /* ========================================
@@ -737,7 +737,7 @@ a { color: inherit; }
 }
 
 .focus-row:hover {
-    background: linear-gradient(90deg, #fff7ed 0%, rgba(250, 250, 250, 0) 100%);
+    background: linear-gradient(90deg, #fff7ed 0%, rgba(255, 247, 237, 0) 100%);
     transform: translateX(12px);
 }
 
@@ -748,7 +748,7 @@ a { color: inherit; }
     letter-spacing: -2px;
     line-height: 1;
     color: transparent;
-    -webkit-text-stroke: 1.5px rgba(110, 231, 183, 0.35);
+    -webkit-text-stroke: 1.5px rgba(249, 115, 22, 0.35);
     transition: all 0.35s;
     flex-shrink: 0;
     width: 84px;
@@ -874,7 +874,7 @@ a { color: inherit; }
     position: absolute;
     font-weight: 800;
     line-height: 1;
-    color: rgba(110, 231, 183, 0.08);
+    color: rgba(249, 115, 22, 0.08);
     pointer-events: none;
     user-select: none;
     transition: color 0.35s;
@@ -890,7 +890,7 @@ a { color: inherit; }
     overflow: hidden;
     margin-bottom: var(--sp-md);
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    border: 1px solid rgba(110, 231, 183, 0.08);
+    border: 1px solid rgba(249, 115, 22, 0.08);
 }
 
 /* 卡片顶部光泽 */
@@ -925,9 +925,9 @@ a { color: inherit; }
 }
 
 .proj-hero:hover {
-    box-shadow: var(--shadow-xl), 0 0 0 1px rgba(110, 231, 183, 0.12);
+    box-shadow: var(--shadow-xl), 0 0 0 1px rgba(249, 115, 22, 0.12);
     transform: translateY(-6px);
-    border-color: rgba(110, 231, 183, 0.15);
+    border-color: rgba(249, 115, 22, 0.15);
 }
 
 .proj-hero .proj-ghost {
@@ -938,7 +938,7 @@ a { color: inherit; }
 }
 
 .proj-hero:hover .proj-ghost {
-    color: rgba(110, 231, 183, 0.15);
+    color: rgba(249, 115, 22, 0.15);
 }
 
 .proj-hero-body {
@@ -1006,7 +1006,7 @@ a { color: inherit; }
     inset: 0;
     border-radius: var(--r-lg);
     padding: 1px;
-    background: linear-gradient(135deg, rgba(110, 231, 183, 0.08), transparent);
+    background: linear-gradient(135deg, rgba(249, 115, 22, 0.08), transparent);
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
@@ -1021,7 +1021,7 @@ a { color: inherit; }
 .proj-sub:hover {
     box-shadow: var(--shadow-lg);
     transform: translateY(-6px);
-    border-color: rgba(110, 231, 183, 0.10);
+    border-color: rgba(249, 115, 22, 0.10);
 }
 
 .proj-sub .proj-ghost {
@@ -1029,11 +1029,11 @@ a { color: inherit; }
     right: 8px;
     font-size: 88px;
     letter-spacing: -3px;
-    color: rgba(110, 231, 183, 0.06);
+    color: rgba(249, 115, 22, 0.06);
 }
 
 .proj-sub:hover .proj-ghost {
-    color: rgba(110, 231, 183, 0.12);
+    color: rgba(249, 115, 22, 0.12);
 }
 
 .proj-sub h3 {
@@ -1136,7 +1136,7 @@ a { color: inherit; }
     transform: translateX(-50%);
     width: 660px;
     height: 380px;
-    background: radial-gradient(ellipse, rgba(110, 231, 183, 0.09) 0%, transparent 62%);
+    background: radial-gradient(ellipse, rgba(249, 115, 22, 0.09) 0%, transparent 62%);
     pointer-events: none;
 }
 
@@ -1146,8 +1146,8 @@ a { color: inherit; }
     position: absolute;
     inset: 0;
     background-image:
-        linear-gradient(rgba(110, 231, 183, 0.04) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(110, 231, 183, 0.04) 1px, transparent 1px);
+        linear-gradient(rgba(249, 115, 22, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(249, 115, 22, 0.04) 1px, transparent 1px);
     background-size: 44px 44px;
     -webkit-mask-image: radial-gradient(ellipse 62% 72% at 50% 45%, #000 0%, transparent 75%);
     mask-image: radial-gradient(ellipse 62% 72% at 50% 45%, #000 0%, transparent 75%);
@@ -1209,8 +1209,8 @@ a { color: inherit; }
 }
 
 @keyframes mail-breathe {
-    0%, 100% { box-shadow: 0 0 18px rgba(110, 231, 183, 0.10); }
-    50% { box-shadow: 0 0 30px rgba(110, 231, 183, 0.22); }
+    0%, 100% { box-shadow: 0 0 18px rgba(249, 115, 22, 0.10); }
+    50% { box-shadow: 0 0 30px rgba(249, 115, 22, 0.22); }
 }
 
 .btn-mail:hover {
@@ -1218,7 +1218,7 @@ a { color: inherit; }
     color: #fff;
     transform: translateY(-2px);
     animation: none;
-    box-shadow: 0 10px 26px rgba(110, 231, 183, 0.35);
+    box-shadow: 0 10px 26px rgba(249, 115, 22, 0.35);
 }
 
 .btn-mail .mail-ico {
@@ -1348,7 +1348,7 @@ a { color: inherit; }
     right: -140px;
     width: 380px;
     height: 380px;
-    background: radial-gradient(circle, rgba(110, 231, 183, 0.11) 0%, transparent 65%);
+    background: radial-gradient(circle, rgba(249, 115, 22, 0.11) 0%, transparent 65%);
     pointer-events: none;
 }
 
@@ -1360,7 +1360,7 @@ a { color: inherit; }
     left: -30px;
     width: 150px;
     height: 110px;
-    background-image: radial-gradient(rgba(110, 231, 183, 0.28) 1.2px, transparent 1.2px);
+    background-image: radial-gradient(rgba(249, 115, 22, 0.28) 1.2px, transparent 1.2px);
     background-size: 16px 16px;
     mask-image: linear-gradient(135deg, black, transparent 75%);
     -webkit-mask-image: linear-gradient(135deg, black, transparent 75%);
@@ -1390,13 +1390,13 @@ a { color: inherit; }
     border-radius: 50%;
     object-fit: cover;
     flex-shrink: 0;
-    box-shadow: 0 3px 12px rgba(28, 25, 23, 0.08), 0 0 0 2px rgba(110, 231, 183, 0.06);
+    box-shadow: 0 3px 12px rgba(28, 25, 23, 0.08), 0 0 0 2px rgba(249, 115, 22, 0.06);
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .r-avatar:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(28, 25, 23, 0.12), 0 0 0 2px rgba(110, 231, 183, 0.14);
+    box-shadow: 0 6px 20px rgba(28, 25, 23, 0.12), 0 0 0 2px rgba(249, 115, 22, 0.14);
 }
 
 .r-hero-content {
@@ -1577,7 +1577,7 @@ a.r-chip:hover {
     top: 10px;
     bottom: 10px;
     width: 2px;
-    background: linear-gradient(to bottom, var(--c-accent-light) 0%, rgba(167, 243, 208, 0.05) 100%);
+    background: linear-gradient(to bottom, var(--c-accent-light) 0%, rgba(251, 146, 60, 0.05) 100%);
     border-radius: 1px;
 }
 
@@ -1598,7 +1598,7 @@ a.r-chip:hover {
     background: var(--c-bg-card);
     border: 3px solid var(--c-accent);
     z-index: 1;
-    box-shadow: 0 2px 8px rgba(110, 231, 183, 0.3);
+    box-shadow: 0 2px 8px rgba(249, 115, 22, 0.3);
 }
 
 .tl-card {
@@ -1618,7 +1618,7 @@ a.r-chip:hover {
     inset: 0;
     border-radius: var(--r-lg);
     padding: 1px;
-    background: linear-gradient(135deg, rgba(110, 231, 183, 0.08), transparent);
+    background: linear-gradient(135deg, rgba(249, 115, 22, 0.08), transparent);
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
@@ -1633,14 +1633,14 @@ a.r-chip:hover {
 .tl-card:hover {
     box-shadow: var(--shadow-lg);
     transform: translateY(-4px);
-    border-color: rgba(110, 231, 183, 0.10);
+    border-color: rgba(249, 115, 22, 0.10);
 }
 
 /* 现任公司卡片：浅橙渐变底 + 增强光晕 */
 .tl-card.featured {
     background: linear-gradient(135deg, #ffffff 0%, #fff7ed 100%);
     box-shadow: var(--shadow-md);
-    border-color: rgba(110, 231, 183, 0.08);
+    border-color: rgba(249, 115, 22, 0.08);
 }
 
 .tl-card.featured::after {
@@ -1659,7 +1659,7 @@ a.r-chip:hover {
 
 .tl-card.featured:hover {
     box-shadow: var(--shadow-xl);
-    border-color: rgba(110, 231, 183, 0.15);
+    border-color: rgba(249, 115, 22, 0.15);
 }
 
 .tl-card.featured:hover::after {
@@ -1748,11 +1748,11 @@ a.r-chip:hover {
 /* 重点项目：浅橙渐变底 + 橙色光晕 */
 .proj-card.featured {
     background: linear-gradient(135deg, #ffffff 0%, #fff7ed 100%);
-    box-shadow: 0 10px 36px rgba(110, 231, 183, 0.13);
+    box-shadow: 0 10px 36px rgba(249, 115, 22, 0.13);
 }
 
 .proj-card.featured:hover {
-    box-shadow: 0 16px 48px rgba(110, 231, 183, 0.20);
+    box-shadow: 0 16px 48px rgba(249, 115, 22, 0.20);
 }
 
 .proj-index {
@@ -1949,7 +1949,7 @@ a.r-chip:hover {
     justify-content: center;
     margin-top: var(--sp-xl);
     padding-top: var(--sp-lg);
-    border-top: 1px solid rgba(110, 231, 183, 0.1);
+    border-top: 1px solid rgba(249, 115, 22, 0.1);
 }
 
 .hl-item {
@@ -2008,7 +2008,7 @@ a.r-chip:hover {
 .value-card:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-lg);
-    border-color: rgba(110, 231, 183, 0.10);
+    border-color: rgba(249, 115, 22, 0.10);
 }
 
 .value-icon {
@@ -2045,8 +2045,8 @@ a.r-chip:hover {
     gap: var(--sp-lg);
     margin: var(--sp-md) 0;
     padding: var(--sp-md) 0;
-    border-top: 1px dashed rgba(110, 231, 183, 0.15);
-    border-bottom: 1px dashed rgba(110, 231, 183, 0.15);
+    border-top: 1px dashed rgba(249, 115, 22, 0.15);
+    border-bottom: 1px dashed rgba(249, 115, 22, 0.15);
 }
 
 .proj-results.mini {
@@ -2114,7 +2114,7 @@ a.r-chip:hover {
 .social-card:not(.disabled):hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-md);
-    border-color: rgba(110, 231, 183, 0.10);
+    border-color: rgba(249, 115, 22, 0.10);
 }
 
 .social-card.disabled {
